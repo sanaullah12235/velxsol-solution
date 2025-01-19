@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+ /* for navbar styling start*/
+ .navbar {
+          display: flex;  
+          justify-content: space-between right;  
+          background-color:rgb(124, 23, 23);
+          padding: 7px;  
+         
+        }
+        
+        
+        .navbar a {
+          color: rgb(203, 203, 209); 
+          text-decoration: none; 
+          padding: 10px 20px;
+          
+        }
+  
+        
+        .navbar a:hover {
+          background-color: #db1a1a; 
+         
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f0dfdf;
+        }
+
+        .service-item h2 {
+            margin-bottom: 20px;
+        }
+
+        .learn-more-btn {
+            background-color: #b12121;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #8c1414;
+        }
+    </style>
+</head>
+<body>
+    <nav >
+        <!-- Navbar links-->
+        <div class="navbar">
+           <a href="/homepage.html">Home</a>
+           <a href="/about.html">About</a>
+           <a href="/portfolio.html">portfolio</a>
+           <a href="/contect.html">Contect</a>
+      </div>
+    </nav>
+<h1 style="color: #8c1414;">Check Out Our Services</h1>
+
+<div class="service-item" style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>Game Development</h2>
+    <p>We create immersive and interactive games for all platforms.</p>
+    <button class="learn-more-btn" data-page="gamedevelpment.html">Learn More</button>
+</div>
+
+<div class="service-item" style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>Mobile App Development</h2>
+    <p>Innovative mobile apps for Android and iOS.</p>
+    <button class="learn-more-btn" data-page="mobileappdevelopment.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 3.jpg);">
+    <h2>Web Development</h2>
+    <p>Building responsive and engaging websites.</p>
+    <button class="learn-more-btn" data-page="webdevelopment.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>UI/UX Design</h2>
+    <p>Designing user-friendly interfaces with a focus on experience.</p>
+    <button class="learn-more-btn" data-page="uiuxdesign.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>Cloud Solutions</h2>
+    <p>Providing cloud infrastructure and scalable solutions.</p>
+    <button class="learn-more-btn" data-page="cloudsolutions.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 3.jpg);">
+    <h2>Digital Marketing</h2>
+    <p>Comprehensive digital marketing strategies to boost your brand.</p>
+    <button class="learn-more-btn" data-page="digitalmarketing.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>Data Analytics</h2>
+    <p>Using data to drive business insights and growth.</p>
+    <button class="learn-more-btn" data-page="dataanalytics.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>SEO Services</h2>
+    <p>Optimizing your website for search engines to increase visibility.</p>
+    <button class="learn-more-btn" data-page="seoservices.html">Learn More</button>
+</div>
+
+<script>
+    // Select all "Learn More" buttons
+    const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+
+    // Add click event listener to each button
+    learnMoreBtns.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the data-page attribute of the clicked button
+            const page = this.getAttribute('data-page');
+            // Redirect to the respective page
+            window.location.href = `/${page}`;
+        });
+    });
+</script>
+
+</body>
+</html>
