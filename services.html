@@ -181,18 +181,18 @@
 </div>
 
 <script>
-    // Select all "Learn More" buttons
-    const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+  // Select all "Learn More" buttons
+  const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
 
-    // Add click event listener to each button
-    learnMoreBtns.forEach(button => {
-        button.addEventListener('click', function() {
-            // Get the data-page attribute of the clicked button
-            const page = this.getAttribute('data-page');
-            // Redirect to the respective page
-            window.location.href = `/${page}`;
-        });
+  // Add click event listener to each button
+  learnMoreBtns.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the data-page attribute of the clicked button
+      const page = this.getAttribute('data-page');
+      // Redirect to the respective page
+      window.location.href = ${page};
     });
+  });
 </script>
 <footer>
     <div class="footer-container">
@@ -240,4 +240,5 @@
   </footer>
 </body>
 </html>
+
 
