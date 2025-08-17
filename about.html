@@ -152,7 +152,13 @@
   padding: 20px;
   font-size: 14px;
   color: #1b1a1a;
-      width: 100%;
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* Cancels out any body/container padding */
+  margin-right: -50vw;
+  box-sizing: border-box;
 }
 
 .footer-container {
@@ -160,7 +166,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-    padding: 0px;
+  padding: 0; /* No inner padding here unless you want spacing inside */
 }
 
 .footer-section {
@@ -168,13 +174,15 @@
   min-width: 200px;
 }
 
-.footer-section h3, .footer-section h4 {
+.footer-section h3,
+.footer-section h4 {
   color: #000;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-section ul li {
@@ -200,6 +208,7 @@
   font-size: 12px;
   color: #b11a1a;
 }
+
     </style>
 </head>
 <body> <nav >
@@ -377,6 +386,7 @@
 </body>
 
 </html>
+
 
 
 
