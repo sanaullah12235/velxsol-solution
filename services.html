@@ -68,6 +68,8 @@
             background-color: #8c1414;
         }
         footer {
+            width: 100vw;
+  margin-left: calc(-1 * (20px));
   background-color: #eee6e6;
   padding: 20px;
   font-size: 14px;
@@ -124,7 +126,7 @@
     <nav >
         <!-- Navbar links-->
         <div class="navbar">
-           <a href="homepage.html">Home</a>
+           <a href="index.html">Home</a>
            <a href="about.html">About</a>
            <a href="portfolio.html">portfolio</a>
            <a href="contect.html">Contect</a>
@@ -181,19 +183,16 @@
 </div>
 
 <script>
-  // Select all "Learn More" buttons
   const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
 
-  // Add click event listener to each button
   learnMoreBtns.forEach(button => {
     button.addEventListener('click', function() {
-      // Get the data-page attribute of the clicked button
       const page = this.getAttribute('data-page');
-      // Redirect to the respective page
-      window.location.href = ${page};
+      window.location.href = `${page}`; // Correct use of template literal
     });
   });
 </script>
+
 <footer>
     <div class="footer-container">
       <div class="footer-section">
@@ -240,5 +239,6 @@
   </footer>
 </body>
 </html>
+
 
 
