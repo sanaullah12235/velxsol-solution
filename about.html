@@ -7,7 +7,17 @@
     <link rel="icon" href="logo top.png" type="image/x-icon">
     <style>
       /* for navbar styling start*/
-      
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
               .navbar {
           display: flex;  
           justify-content: space-between right;  
@@ -156,11 +166,9 @@
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw; /* Cancels out any body/container padding */
-  margin-right: -50vw;
+  transform: translateX(-50%);
   box-sizing: border-box;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -353,8 +361,6 @@
           <li><a href="homepage.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
-             <li><a href="services.html">Portfolio</a></li>
-             <li><a href="services.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -386,6 +392,7 @@
 </body>
 
 </html>
+
 
 
 
