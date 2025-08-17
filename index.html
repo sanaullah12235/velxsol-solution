@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>velxsol.com</title>
+    <link rel="icon" href="/logo top.png" type="image/x-icon">
+    <style>
+      /* navbar styling  start */
+               .navbar {
+          display: flex;  
+          justify-content: space-between right;  
+          background-color:rgb(124, 23, 23);
+          padding: 7px;                                                                                                                                           
+         
+        }
+        
+        
+        .navbar a {
+          color: rgb(241, 236, 247); 
+          text-decoration: none; 
+          padding: 10px 20px;
+          
+        }
+  
+        
+        .navbar a:hover {
+          background-color: #db1a1a; 
+         
+        }
+ /* navbar styling  end */
+
+ /* wellcome container styling  start */
+ #hero {
+  width: 100%;
+  height: 75vh;
+  background: url("/homepageherosectionimage.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: relative;
+  padding-top: 132px;
+}
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 58px;
+  }
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h1 span {
+  color: #de1425;
+}
+
+#hero h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#hero .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #de1425;
+}
+
+#hero .btn-get-started:hover {
+  background: #247cf0;
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 25px 8px 40px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #222222;
+  position: relative;
+  font-weight: 600;
+}
+
+#hero .btn-watch-video i {
+  color: #de1425;
+  font-size: 32px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  transition: 0.3s;
+}
+
+#hero .btn-watch-video:hover {
+  color: #de1425;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #3b8af2;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .btn-get-started, #hero .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+/* wellcome container styling  end*/
+
+/* list of itames container styling  start*/
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px;
+            margin: 60px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 350px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .graphic-design {
+            background-color: white;
+            color:#666 ;
+        }
+
+        .graphic-design h3 {
+            color:  #333333;
+        }
+        .graphic-design p{
+          color: #666; 
+        }
+        /* list of itames container styling  end*/
+      footer {
+  background-color: #eee6e6;
+  padding: 20px;
+  font-size: 14px;
+  color: #1b1a1a;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b11a1a;
+}
+      </style>
+     
+</head>
+<!-- Navbar logo -->
+<body style="margin: 0;font-family: Arial, sans-serif;">
+
+  <nav style="display: flex; justify-content: space-between; align-items: center; background-color: rgb(124, 23, 23); padding: 10px 20px; color: white;">
+      <div style="display: flex; align-items: center;">
+          <img src="/homepage logo.jpeg" style="height:50px; margin-right: 0px; margin-left: auto;
+            margin-right: auto;">
+          <h1 style="margin: 0; color: rgb(179, 155, 94);">elxsol Solutions</h1>
+      </div>
+
+    <!-- Navbar links-->
+    <div class="navbar">
+       <a href="/homepage.html">Home</a>
+       <a href="/about.html">About</a>
+       <a href="/services.html">Services</a>
+       <a href="/portfolio.html">portfolio</a>
+       <a href="/contect.html">Contect</a>
+  </div>
+</nav>
+
+<!-- welcme cnt-->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <h1>Welcome to <span style="color:#de1425">Velxsol Solutions</span>
+    </h1>
+    <h2> We aim to offer our customers a variety of the software's with Web Development, App Development, SEO, Marketing and Graphics.</h2>
+    <div class="d-flex">
+      <a href="/about.html" style="background: #de1425;" class="btn-get-started scrollto">Get Started</a>
+      
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+
+<!-- itams list -->
+
+ <div class="container">
+  <div class="card">
+    <img src="/mobile app image.jpg" width="250" height="200">
+      <h3>Mobile Apps</h3>
+      <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants, or mobile phones. Mobile UI considers constraints, contexts, screen, input, and mobility as outlines for design.</p>
+  </div>
+  <div class="card">
+    <img src="/web development img.jpeg" width="250" height="200">
+      <h3>Web Development</h3>
+      <p>These include WordPress websites and eCommerce solutions focused on usability and responsive design, creative branding solutions that inject personality into your business, and custom programming for ideas that you need help bringing to fruition.</p>
+  </div>
+
+  <div class="card">
+    <img src="/game img.jpeg" width="250" height="200">
+      <h3>Games Development</h3>
+      <p>ame development is the process of creating interactive digital experiences, blending creativity, design, and technology. It involves a range of disciplines including programming, art design, sound engineering, and storytelling to bring a game to life.</p>
+  </div>
+
+
+  <div class="card graphic-design">
+    <img src="/graphic img.jpg" width="250" height="200">
+      <h3>Graphic Designing</h3>
+      <p>These graphic design services may be just what you're looking for: Graphic Design, PowerPoint Design, Vector Design, 3D Design, Photoshop Design, Podcast Design, Infographic Design, Mascot Design.</p>
+  </div>
+  <div class="card">
+    <img src="/digital marketing img.jpeg" width="250" height="200">
+      <h3>Digital Marketing</h3>
+      <p>Marketing is the process of persuading potential consumers to buy the organization's product or service. Marketing services are the methods used in the overall marketing plan of production, pricing, promotion, and distribution.</p>
+  </div>
+</div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Velxo Solutions.</h3>
+        <p>
+          Address: Golden Square Plaza, 2nd floor, office#14, New City Phase 2 Wah Cantt, Pakistan<br>
+          Phone: +92 3225960788<br>
+          Email: <a href="mailto:khansanullah735@gmail.com">contact@velxsol.com</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="/homepage.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Our Services</h4>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>Product Management</li>
+          <li>Marketing</li>
+          <li>  Graphic Design</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Our Social Networks</h4>
+        <div class="social-icons">
+          <a href="Https://wa.me/+92 3225960788"><img src="/whats app logo.png" width="40" alt="whatsapp"></a>
+          <a href="https://www.facebook.com/profile.php?id=100083189142048&mibextid=ZbWKwL"><img src="/facebook logo.png" width="65" height="40" alt="Facebook"></a>
+          <a href="https://www.instagram.com/sanllah098/profilecard/?igsh=MXhvMWZkYmd2dzBhdg=="><img src="/insta logo (2).png" width="40" height="40" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@user10598618?_t=8sb3TM4incz&_r=1"><img src="/tiktok logo.png" width="40" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright velxo Solutions. All Rights Reserved</p>
+      <p>Designed By Sana Ullah 026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

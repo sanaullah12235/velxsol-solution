@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="icon" href="/logo top.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+ /* for navbar styling start*/
+ .navbar {
+          display: flex;  
+          justify-content: space-between right;  
+          background-color:rgb(124, 23, 23);
+          padding: 7px;  
+         
+        }
+        
+        
+        .navbar a {
+          color: rgb(203, 203, 209); 
+          text-decoration: none; 
+          padding: 10px 20px;
+          
+        }
+  
+        
+        .navbar a:hover {
+          background-color: #db1a1a; 
+         
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f0dfdf;
+        }
+
+        .service-item h2 {
+            margin-bottom: 20px;
+        }
+
+        .learn-more-btn {
+            background-color: #b12121;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .learn-more-btn:hover {
+            background-color: #8c1414;
+        }
+        footer {
+  background-color: #eee6e6;
+  padding: 20px;
+  font-size: 14px;
+  color: #1b1a1a;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b11a1a;
+}
+    </style>
+</head>
+<body>
+    <nav >
+        <!-- Navbar links-->
+        <div class="navbar">
+           <a href="/homepage.html">Home</a>
+           <a href="/about.html">About</a>
+           <a href="/portfolio.html">portfolio</a>
+           <a href="/contect.html">Contect</a>
+      </div>
+    </nav>
+<h1 style="color: #8c1414;">Check Out Our Services</h1>
+
+<div class="service-item" style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>Game Development</h2>
+    <p>We create immersive and interactive games for all platforms.</p>
+    <button class="learn-more-btn" data-page="gamedevelpment.html">Learn More</button>
+</div>
+
+<div class="service-item" style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>Mobile App Development</h2>
+    <p>Innovative mobile apps for Android and iOS.</p>
+    <button class="learn-more-btn" data-page="mobileappdevelopment.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 3.jpg);">
+    <h2>Web Development</h2>
+    <p>Building responsive and engaging websites.</p>
+    <button class="learn-more-btn" data-page="webdevelopment.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>UI/UX Design</h2>
+    <p>Designing user-friendly interfaces with a focus on experience.</p>
+    <button class="learn-more-btn" data-page="uiuxdesign.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>Cloud Solutions</h2>
+    <p>Providing cloud infrastructure and scalable solutions.</p>
+    <button class="learn-more-btn" data-page="cloudsolutions.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 3.jpg);">
+    <h2>Digital Marketing</h2>
+    <p>Comprehensive digital marketing strategies to boost your brand.</p>
+    <button class="learn-more-btn" data-page="digitalmarketing.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 1.jpg);">
+    <h2>Data Analytics</h2>
+    <p>Using data to drive business insights and growth.</p>
+    <button class="learn-more-btn" data-page="dataanalytics.html">Learn More</button>
+</div>
+
+<div class="service-item"  style="background-image: url(/services\ img\ 2.jpg);">
+    <h2>SEO Services</h2>
+    <p>Optimizing your website for search engines to increase visibility.</p>
+    <button class="learn-more-btn" data-page="seoservices.html">Learn More</button>
+</div>
+
+<script>
+    // Select all "Learn More" buttons
+    const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+
+    // Add click event listener to each button
+    learnMoreBtns.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the data-page attribute of the clicked button
+            const page = this.getAttribute('data-page');
+            // Redirect to the respective page
+            window.location.href = `/${page}`;
+        });
+    });
+</script>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Velxo Solutions.</h3>
+        <p>
+          Address: Golden Square Plaza, 2nd floor, office#14, New City Phase 2 Wah Cantt, Pakistan<br>
+          Phone: +92 3225960788<br>
+          Email: <a href="mailto:khansanullah735@gmail.com">contact@velxsol.com</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="/homepage.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Our Services</h4>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>Product Management</li>
+          <li>Marketing</li>
+          <li>  Graphic Design</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Our Social Networks</h4>
+        <div class="social-icons">
+          <a href="Https://wa.me/+92 3225960788"><img src="/whats app logo.png" width="40" alt="whatsapp"></a>
+          <a href="https://www.facebook.com/profile.php?id=100083189142048&mibextid=ZbWKwL"><img src="/facebook logo.png" width="65" height="40" alt="Facebook"></a>
+          <a href="https://www.instagram.com/sanllah098/profilecard/?igsh=MXhvMWZkYmd2dzBhdg=="><img src="/insta logo (2).png" width="40" height="40" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@user10598618?_t=8sb3TM4incz&_r=1"><img src="/tiktok logo.png" width="40" alt="TikTok"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright velxo Solutions. All Rights Reserved</p>
+      <p>Designed By Sana Ullah 026
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
